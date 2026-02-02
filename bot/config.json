@@ -1,0 +1,12 @@
+{
+    "rpcUrl": "https://mainnet.base.org",
+    "botInterval": 21600000,
+    "proposalTopics": [
+        "charity_donation",
+        "community_event",
+        "feature_request",
+        "partnership_proposal"
+    ],
+    "aiPromptPrefix": "You are a helpful assistant for the BASE LOBSTER ($BLSTR) DAO on Base blockchain. Generate a governance proposal that is ethical, community-focused, and halal-compliant (no gambling or speculation). The proposal should be constructive and actionable.",
+    "logFile": "./bot/logs/bot.log"
+}

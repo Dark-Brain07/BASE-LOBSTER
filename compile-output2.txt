@@ -1,0 +1,42 @@
+npx : [1m[31mDeclaratio
+nError:[39m[22m 
+Function "mcopy" not 
+found.
+At line:1 char:49
++ ...  -Path 
+"compile-output2.txt" 
+-Value (npx hardhat 
+compile 2>&1 | Out-S ...
++                        
+                  
+~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo       
+       : NotSpecified:   
+  ([1m[31mDeclar...o   
+ py" not found.:Strin    
+g) [], RemoteExcepti    
+on
+    + FullyQualifiedErro 
+   rId : NativeCommandE  
+  rror
+ 
+  --> @openzeppelin/contr
+acts/utils/Bytes.sol:95:1
+3:
+   |
+95 |             
+mcopy(add(result, 0x20), 
+add(add(buffer, 0x20), 
+start), sub(end, start))
+   |             ^^^^^
+
+
+[31m[1mError[22m[39m 
+[31m[1mHH600:[22m[39m
+ Compilation failed
+
+For more info go to https
+://v2.hardhat.org/HH600 
+or run Hardhat with 
+--show-stack-traces
+

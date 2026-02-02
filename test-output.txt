@@ -1,0 +1,16 @@
+==================================================
+CONTRACT CHECK
+==================================================
+Token Address: 0xFdf71B8b3d2F08c8728ee56fB64C283B19BeAEd8
+User Address: 0x7EEcBD64e03Cdb4fbdADfbB786c639eEf340621F
+
+Token Name: BASE LOBSTER
+Token Symbol: BLSTR
+
+>>> BALANCE: 500000.0 BLSTR
+>>> VOTING POWER: 500000.0 BLSTR
+>>> DELEGATE: 0x7EEcBD64e03Cdb4fbdADfbB786c639eEf340621F
+
+Total Supply: 1000000.0 BLSTR
+==================================================
+

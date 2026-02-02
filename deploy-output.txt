@@ -1,0 +1,64 @@
+
+> base-lobster-bot@1.0.0 deploy:sepolia
+> hardhat run scripts/deploy.js --network baseSepolia
+
+=ƒªP Starting BASE LOBSTER deployment...
+
+Deploying contracts with account: 0x7EEcBD64e03Cdb4fbdADfbB786c639eEf340621F
+Account balance: 0.095695001246691408 ETH
+
+=ƒôª Step 1: Deploying BaseLobsterTreasury...
+G£à BaseLobsterTreasury deployed to: 0xDE8500C9603C5048789cE2Ffb24a8Cc8D344D34E
+
+=ƒôª Step 2: Deploying BaseLobsterToken...
+npm : G¥î Deployment 
+failed: ProviderError: 
+replacement transaction 
+underpriced
+At line:1 char:47
++ ... -Path 
+"deploy-output.txt" -Value 
+(npm run deploy:sepolia 
+2>&1 | Out-S ...
++                           
+            
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+    + CategoryInfo          
+    : NotSpecified: (G¥î D  
+  eployment ...ion underp   
+ riced:String) [], Remot    
+eException
+    + FullyQualifiedErrorId 
+    : NativeCommandError
+ 
+    at HttpProvider.request 
+(F:\Github 
+contributation\Base 
+Openclaw agent\base-lobster-
+bot\node_modules\hardhat\src
+\internal\core\providers\htt
+p.ts:116:21)
+    at 
+processTicksAndRejections (n
+ode:internal/process/task_qu
+eues:95:5)
+    at HardhatEthersSigner.s
+endTransaction (F:\Github 
+contributation\Base 
+Openclaw agent\base-lobster-
+bot\node_modules\@nomicfound
+ation\hardhat-ethers\src\sig
+ners.ts:185:18)
+    at 
+ContractFactory.deploy 
+(F:\Github 
+contributation\Base 
+Openclaw agent\base-lobster-
+bot\node_modules\ethers\src.
+ts\contract\factory.ts:111:2
+4)
+    at main (F:\Github 
+contributation\Base 
+Openclaw agent\base-lobster-
+bot\scripts\deploy.js:38:19)
+

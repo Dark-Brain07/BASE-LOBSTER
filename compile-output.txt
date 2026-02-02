@@ -1,0 +1,107 @@
+npx : [31m[1mError
+[22m[39m [31m[1mHH
+606:[22m[39m The 
+project cannot be 
+compiled, see 
+reasons below.
+At line:1 char:48
++ ... t -Path 
+"compile-output.txt" 
+-Value (npx hardhat 
+compile 2>&1 | Out-S 
+...
++                    
+                     
+ ~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo   
+           : 
+NotSpecified:     
+([31m[1mError...  
+   reasons 
+below.:Strin    g) 
+[], RemoteExcepti    
+on
+    + 
+FullyQualifiedErro   
+ rId : 
+NativeCommandE    
+rror
+ 
+
+The Solidity version 
+pragma statement in 
+these files doesn't 
+match any of the 
+configured compilers 
+in your config. 
+Change the pragma or 
+configure additional 
+compiler versions in 
+your hardhat config.
+
+  * @openzeppelin/con
+tracts/governance/ext
+ensions/GovernorTimel
+ockControl.sol 
+(^0.8.24)
+  * @openzeppelin/con
+tracts/utils/cryptogr
+aphy/SignatureChecker
+.sol (^0.8.24)
+  * @openzeppelin/con
+tracts/utils/Bytes.so
+l (^0.8.24)
+  * @openzeppelin/con
+tracts/governance/Gov
+ernor.sol (^0.8.24)
+  * @openzeppelin/con
+tracts/governance/ext
+ensions/GovernorVotes
+.sol (^0.8.24)
+  * @openzeppelin/con
+tracts/governance/ext
+ensions/GovernorVotes
+QuorumFraction.sol 
+(^0.8.24)
+  * @openzeppelin/con
+tracts/governance/ext
+ensions/GovernorCount
+ingSimple.sol 
+(^0.8.24)
+  * @openzeppelin/con
+tracts/governance/ext
+ensions/GovernorSetti
+ngs.sol (^0.8.24)
+
+These files and its 
+dependencies cannot 
+be compiled with 
+your config. This 
+can happen because 
+they have 
+incompatible 
+Solidity pragmas, or 
+don't match any of 
+your configured 
+Solidity compilers.
+
+  * contracts/BaseLob
+sterGovernor.sol
+
+To learn more, run 
+the command again 
+with --verbose
+
+Read about compiler 
+configuration at http
+s://v2.hardhat.org/co
+nfig
+
+
+For more info go to h
+ttps://v2.hardhat.org
+/HH606 or run 
+Hardhat with 
+--show-stack-traces
+
