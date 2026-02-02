@@ -102,7 +102,7 @@ export default function HomePage() {
                         />
                         <StatsCard
                             title="Treasury"
-                            value={treasuryBalance ? `${formatNumber(treasuryBalance)}` : "0"}
+                            value={typeof treasuryBalance === 'bigint' ? `${formatNumber(treasuryBalance)}` : "0"}
                             subtitle="ETH"
                             icon="💰"
                         />
