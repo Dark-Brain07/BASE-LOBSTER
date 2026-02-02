@@ -34,8 +34,8 @@ export default function ProposalCard({
     hasVoted,
 }: ProposalCardProps) {
     const totalVotes = forVotes + againstVotes + abstainVotes;
-    const forPercentage = totalVotes > 0n ? Number((forVotes * 100n) / totalVotes) : 0;
-    const againstPercentage = totalVotes > 0n ? Number((againstVotes * 100n) / totalVotes) : 0;
+    const forPercentage = totalVotes > BigInt(0) ? Number((forVotes * BigInt(100)) / totalVotes) : 0;
+    const againstPercentage = totalVotes > BigInt(0) ? Number((againstVotes * BigInt(100)) / totalVotes) : 0;
 
     const formatVotes = (votes: bigint) => {
         const num = Number(votes) / 1e18;
