@@ -81,13 +81,14 @@ export default function DashboardPage() {
     }, [delegateSuccess, refetchBalance, refetchVotes, refetchDelegate]);
 
     const handleDelegate = () => {
-        if (!delegateAddress && !address) return;
+        const targetAddress = delegateAddress || address;
+        if (!targetAddress) return;
 
         delegate({
             address: TOKEN_ADDRESS,
             abi: TOKEN_ABI,
             functionName: "delegate",
-            args: [delegateAddress || address],
+            args: [targetAddress as `0x${string}`],
         });
     };
 
