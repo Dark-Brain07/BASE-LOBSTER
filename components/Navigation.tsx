@@ -26,7 +26,7 @@ export default function Navigation() {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 group">
                         <img
-                            src="/logo.jpg"
+                            src="/logo.png"
                             alt="Base Lobster Logo"
                             className="w-12 h-12 lobster-float object-contain"
                         />
