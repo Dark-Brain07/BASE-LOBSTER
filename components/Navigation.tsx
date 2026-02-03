@@ -25,11 +25,7 @@ export default function Navigation() {
                 <div className="flex items-center justify-between">
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2 group">
-                        <img
-                            src="/logo.png"
-                            alt="Base Lobster Logo"
-                            className="w-12 h-12 lobster-float object-contain"
-                        />
+                        <span className="text-3xl lobster-float">🦞</span>
                         <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-700">
                             BASE LOBSTER
                         </span>
