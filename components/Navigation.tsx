@@ -28,7 +28,7 @@ export default function Navigation() {
                         <img
                             src="/logo.jpg"
                             alt="Base Lobster Logo"
-                            className="w-10 h-10 rounded-full lobster-float"
+                            className="w-12 h-12 lobster-float object-contain"
                         />
                         <span className="text-xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-red-500 to-red-700">
                             BASE LOBSTER
