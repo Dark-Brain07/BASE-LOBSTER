@@ -167,7 +167,7 @@ export default function HomePage() {
                     <div className="space-y-8">
                         {/* Step 1 */}
                         <div className="flex items-start gap-4">
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 flex items-center justify-center text-white font-bold text-xl">
+                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-red-600 to-red-800 flex items-center justify-center text-white font-bold text-xl">
                                 1
                             </div>
                             <div>
@@ -181,7 +181,7 @@ export default function HomePage() {
 
                         {/* Step 2 */}
                         <div className="flex items-start gap-4">
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 flex items-center justify-center text-white font-bold text-xl">
+                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-red-600 to-red-800 flex items-center justify-center text-white font-bold text-xl">
                                 2
                             </div>
                             <div>
@@ -195,7 +195,7 @@ export default function HomePage() {
 
                         {/* Step 3 */}
                         <div className="flex items-start gap-4">
-                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-primary-500 to-secondary-500 flex items-center justify-center text-white font-bold text-xl">
+                            <div className="flex-shrink-0 w-12 h-12 rounded-full bg-gradient-to-r from-red-600 to-red-800 flex items-center justify-center text-white font-bold text-xl">
                                 3
                             </div>
                             <div>
