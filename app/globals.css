@@ -95,28 +95,28 @@ body.light {
 
 .card:hover {
   transform: translateY(-4px);
-  box-shadow: 0 12px 40px rgba(0, 82, 255, 0.2);
+  box-shadow: 0 12px 40px rgba(230, 57, 70, 0.2);
 }
 
-/* Button Styles */
+/* Button Styles - Lobster Red Theme */
 .btn-primary {
   @apply px-6 py-3 rounded-xl font-semibold text-white transition-all duration-300;
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, #E63946, #C62828);
 }
 
 .btn-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 20px rgba(0, 82, 255, 0.4);
+  box-shadow: 0 8px 20px rgba(230, 57, 70, 0.5);
 }
 
 .btn-secondary {
   @apply px-6 py-3 rounded-xl font-semibold border-2 transition-all duration-300;
-  border-color: var(--primary);
-  color: var(--primary);
+  border-color: #E63946;
+  color: #E63946;
 }
 
 .btn-secondary:hover {
-  background: var(--primary);
+  background: #E63946;
   color: white;
 }
 
