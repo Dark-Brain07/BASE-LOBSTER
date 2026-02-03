@@ -53,7 +53,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="container mx-auto text-center relative z-10">
-                    <div className="text-8xl mb-6 lobster-float">🦞</div>
+                    <img src="/hero-logo.png" alt="Base Lobster" className="w-32 h-32 mx-auto mb-6 lobster-float object-contain" />
                     <h1 className="text-5xl md:text-7xl font-bold mb-4">
                         BASE LOBSTER
                     </h1>
