@@ -7,13 +7,13 @@
   --secondary: #764BA2;
   --accent: #E63946;
   --ocean: #00a7e6;
-  --background: #ffffff;
-  --foreground: #171717;
-}
-
-.dark {
   --background: #0a0a0a;
   --foreground: #ededed;
+}
+
+.light {
+  --background: #ffffff;
+  --foreground: #171717;
 }
 
 * {
@@ -32,6 +32,12 @@ body {
 body {
   color: var(--foreground);
   background: var(--background);
+  background-color: #0a0a0a;
+}
+
+.light body,
+body.light {
+  background-color: #ffffff;
 }
 
 /* Ocean Wave Animation Background */
@@ -42,9 +48,17 @@ body {
 }
 
 @keyframes gradient-shift {
-  0% { background-position: 0% 50%; }
-  50% { background-position: 100% 50%; }
-  100% { background-position: 0% 50%; }
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
 }
 
 /* Glass Effect */
@@ -62,16 +76,16 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-/* Card Styles */
+/* Card Styles - Dark mode default */
 .card {
   @apply rounded-2xl p-6 transition-all duration-300;
-  background: linear-gradient(145deg, rgba(255,255,255,0.9), rgba(255,255,255,0.7));
-  box-shadow: 0 8px 32px rgba(0, 82, 255, 0.1);
+  background: linear-gradient(145deg, rgba(30, 30, 40, 0.9), rgba(20, 20, 30, 0.7));
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
 
-.dark .card {
-  background: linear-gradient(145deg, rgba(30,30,40,0.9), rgba(20,20,30,0.7));
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+.light .card {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.9), rgba(255, 255, 255, 0.7));
+  box-shadow: 0 8px 32px rgba(0, 82, 255, 0.1);
 }
 
 .card:hover {
@@ -161,12 +175,12 @@ body {
 /* Stat Cards */
 .stat-card {
   @apply rounded-2xl p-6 text-center;
-  background: linear-gradient(145deg, rgba(255,255,255,0.95), rgba(255,255,255,0.8));
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.95), rgba(255, 255, 255, 0.8));
   box-shadow: 0 4px 20px rgba(0, 82, 255, 0.08);
 }
 
 .dark .stat-card {
-  background: linear-gradient(145deg, rgba(30,30,40,0.95), rgba(20,20,30,0.8));
+  background: linear-gradient(145deg, rgba(30, 30, 40, 0.95), rgba(20, 20, 30, 0.8));
 }
 
 .stat-value {
@@ -194,8 +208,15 @@ body {
 }
 
 @keyframes float {
-  0%, 100% { transform: translateY(0) rotate(0deg); }
-  50% { transform: translateY(-10px) rotate(5deg); }
+
+  0%,
+  100% {
+    transform: translateY(0) rotate(0deg);
+  }
+
+  50% {
+    transform: translateY(-10px) rotate(5deg);
+  }
 }
 
 /* Progress Bar */
