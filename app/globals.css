@@ -190,7 +190,7 @@ body.light {
 
 .stat-value {
   @apply text-4xl font-bold bg-clip-text text-transparent;
-  background-image: linear-gradient(135deg, var(--primary), var(--secondary));
+  background-image: linear-gradient(135deg, #E63946, #C62828);
 }
 
 /* Navigation - Lobster Red Theme */
@@ -221,6 +221,50 @@ body.light {
 
   50% {
     transform: translateY(-10px) rotate(5deg);
+  }
+}
+
+/* 3D Flip Animation for Hero Logo */
+.logo-spin {
+  animation: flip3d 4s ease-in-out infinite;
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+
+@keyframes flip3d {
+  0% {
+    transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
+  }
+
+  25% {
+    transform: perspective(1000px) rotateY(180deg) rotateX(10deg);
+  }
+
+  50% {
+    transform: perspective(1000px) rotateY(360deg) rotateX(0deg);
+  }
+
+  75% {
+    transform: perspective(1000px) rotateY(540deg) rotateX(-10deg);
+  }
+
+  100% {
+    transform: perspective(1000px) rotateY(720deg) rotateX(0deg);
+  }
+}
+
+/* Simple Spin Animation */
+.logo-simple-spin {
+  animation: simpleSpin 6s linear infinite;
+}
+
+@keyframes simpleSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
   }
 }
 

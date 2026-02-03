@@ -143,7 +143,7 @@ export default function FaucetButton() {
     if (!isConnected) {
         return (
             <div className="glass rounded-2xl p-6 text-center max-w-sm mx-auto">
-                <div className="text-4xl mb-3">🚰</div>
+                <img src="/faucet-icon.png" alt="Faucet" className="w-12 h-12 mx-auto mb-3" />
                 <h3 className="font-bold text-lg mb-2">Token Faucet</h3>
                 <p className="text-sm text-gray-600 dark:text-gray-400 mb-4">
                     Connect wallet to claim free BLSTR
@@ -173,7 +173,7 @@ export default function FaucetButton() {
             <div className="absolute inset-0 bg-gradient-to-br from-primary-500/10 to-secondary-500/10 animate-pulse"></div>
 
             <div className="relative z-10">
-                <div className="text-4xl mb-3">🚰</div>
+                <img src="/faucet-icon.png" alt="Faucet" className="w-12 h-12 mx-auto mb-3" />
                 <h3 className="font-bold text-lg mb-2">Token Faucet</h3>
 
                 {showSuccess ? (

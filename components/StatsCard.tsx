@@ -5,16 +5,24 @@ interface StatsCardProps {
     value: string | number;
     subtitle?: string;
     icon?: string;
+    imageIcon?: string;
+    imageAnimation?: string;
     trend?: {
         value: number;
         isPositive: boolean;
     };
 }
 
-export default function StatsCard({ title, value, subtitle, icon, trend }: StatsCardProps) {
+export default function StatsCard({ title, value, subtitle, icon, imageIcon, imageAnimation, trend }: StatsCardProps) {
     return (
         <div className="stat-card group hover:scale-105 transition-transform duration-300">
-            {icon && (
+            {imageIcon ? (
+                <img
+                    src={imageIcon}
+                    alt={title}
+                    className={`w-16 h-16 mb-3 mx-auto object-contain ${imageAnimation || ''}`}
+                />
+            ) : icon && (
                 <div className="text-4xl mb-3 group-hover:scale-110 transition-transform">
                     {icon}
                 </div>

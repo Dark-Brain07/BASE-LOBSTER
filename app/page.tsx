@@ -53,7 +53,7 @@ export default function HomePage() {
                 </div>
 
                 <div className="container mx-auto text-center relative z-10">
-                    <img src="/hero-logo.png" alt="Base Lobster" className="w-32 h-32 mx-auto mb-6 lobster-float object-contain" />
+                    <img src="/hero-logo.png" alt="Base Lobster" className="w-48 h-48 mx-auto mb-6 logo-spin object-contain" />
                     <h1 className="text-5xl md:text-7xl font-bold mb-4">
                         BASE LOBSTER
                     </h1>
@@ -69,10 +69,10 @@ export default function HomePage() {
                         {isConnected ? (
                             <>
                                 <Link href="/governance" className="btn-primary text-lg px-8 py-4">
-                                    🗳️ View Proposals
+                                    View Proposals
                                 </Link>
                                 <Link href="/dashboard" className="btn-secondary bg-white/10 border-white text-white hover:bg-white hover:text-primary-500 text-lg px-8 py-4">
-                                    📊 Dashboard
+                                    Dashboard
                                 </Link>
                             </>
                         ) : (
@@ -98,19 +98,19 @@ export default function HomePage() {
                             title="Total Supply"
                             value={totalSupply ? formatNumber(totalSupply) : "1M"}
                             subtitle="BLSTR Tokens"
-                            icon="🪙"
+                            imageIcon="/hero-logo.png"
                         />
                         <StatsCard
                             title="Active Proposals"
                             value={proposalCount?.toString() || "0"}
                             subtitle="Community Decisions"
-                            icon="📋"
+                            imageIcon="/proposals-icon.png"
                         />
                         <StatsCard
                             title="Treasury"
                             value={typeof treasuryBalance === 'bigint' ? `${formatNumber(treasuryBalance)}` : "0"}
                             subtitle="ETH"
-                            icon="💰"
+                            imageIcon="/treasury-icon.png"
                         />
                     </div>
                 </div>
@@ -126,7 +126,7 @@ export default function HomePage() {
                     <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto">
                         {/* Feature 1 */}
                         <div className="card text-center">
-                            <div className="text-5xl mb-4">🤖</div>
+                            <img src="/ai-icon.png" alt="AI Governance" className="w-48 h-48 mx-auto mb-4" />
                             <h3 className="text-xl font-bold mb-2">AI-Powered Governance</h3>
                             <p className="text-gray-600 dark:text-gray-400">
                                 Our Gemini AI bot generates thoughtful community proposals every 6 hours,
@@ -136,7 +136,7 @@ export default function HomePage() {
 
                         {/* Feature 2 */}
                         <div className="card text-center">
-                            <div className="text-5xl mb-4">☪️</div>
+                            <img src="/halal-icon.png" alt="Halal Compliant" className="w-56 h-56 mx-auto mb-4 object-contain" />
                             <h3 className="text-xl font-bold mb-2">Halal-Compliant</h3>
                             <p className="text-gray-600 dark:text-gray-400">
                                 No gambling, no speculation. Pure community governance for ethical
@@ -146,7 +146,7 @@ export default function HomePage() {
 
                         {/* Feature 3 */}
                         <div className="card text-center">
-                            <div className="text-5xl mb-4">🔗</div>
+                            <img src="/base-icon.png" alt="Built on Base" className="w-48 h-48 mx-auto mb-4 object-contain" />
                             <h3 className="text-xl font-bold mb-2">Built on Base</h3>
                             <p className="text-gray-600 dark:text-gray-400">
                                 Leveraging Base's low fees and fast transactions for accessible
