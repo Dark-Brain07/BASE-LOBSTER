@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useAccount, useReadContract } from "wagmi";
 import { ConnectButton } from "@rainbow-me/rainbowkit";
 import StatsCard from "@/components/StatsCard";
+import FaucetButton from "@/components/FaucetButton";
 import { TOKEN_ABI, GOVERNOR_ABI, TREASURY_ABI, CONTRACT_ADDRESSES } from "@/lib/contracts";
 import { formatEther } from "viem";
 
@@ -80,6 +81,11 @@ export default function HomePage() {
                                 <p className="text-sm opacity-70">Connect your wallet to participate in governance</p>
                             </div>
                         )}
+                    </div>
+
+                    {/* Faucet Button */}
+                    <div className="mt-8">
+                        <FaucetButton />
                     </div>
                 </div>
             </section>
