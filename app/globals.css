@@ -40,11 +40,16 @@ body.light {
   background-color: #ffffff;
 }
 
-/* Ocean Wave Animation Background */
+/* Ocean Wave Animation Background - Dark Mode Default */
 .ocean-bg {
-  background: linear-gradient(135deg, #0052FF 0%, #764BA2 50%, #0052FF 100%);
+  background: linear-gradient(135deg, #0a0a0a 0%, #1a1a2e 50%, #16213e 100%);
   background-size: 400% 400%;
   animation: gradient-shift 15s ease infinite;
+}
+
+.light .ocean-bg {
+  background: linear-gradient(135deg, #0052FF 0%, #764BA2 50%, #0052FF 100%);
+  background-size: 400% 400%;
 }
 
 @keyframes gradient-shift {
