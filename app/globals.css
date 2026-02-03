@@ -193,17 +193,17 @@ body.light {
   background-image: linear-gradient(135deg, var(--primary), var(--secondary));
 }
 
-/* Navigation */
+/* Navigation - Lobster Red Theme */
 .nav-link {
   @apply px-4 py-2 rounded-lg font-medium transition-all duration-200;
 }
 
 .nav-link:hover {
-  background: rgba(0, 82, 255, 0.1);
+  background: rgba(230, 57, 70, 0.1);
 }
 
 .nav-link.active {
-  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  background: linear-gradient(135deg, #E63946, #C62828);
   color: white;
 }
 
